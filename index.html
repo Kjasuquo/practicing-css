@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* body{
+            background: black;
+        } */
+
+        :root{
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    a{
+        text-decoration: none;
+    }
+    img{
+        width: 100%;
+        object-fit: contain;
+
+
+    }
+    header{
+        height: 1000px;
+        background: url(./images/framedPrints003.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: none;
+        position: relative;
+
+    }
+    nav{
+        /* border: 1px solid blue; */
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+    ul{
+        list-style-type: none;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul li{
+        /* border: 1px solid purple; */
+        padding-top: 20px;
+    }
+    ul>li:first-child{
+        /* border: 3px solid red; */
+        width: 100px;
+        height: 55px;
+        margin-left: 30px;
+
+    }
+    .fa-solid{
+        display: none;
+        cursor: pointer;
+    } 
+    ul>li:nth-child(2){
+        margin-right: 80px;
+    }
+    ul>li:nth-child(2) a{
+        /* border: 3px solid green; */
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    h1{
+        position: relative;
+        top: 10rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: var(--white);
+    }
+
+@media  screen and (max-width:768px) {
+        ul>li:nth-child(2){
+        display: none;
+    }
+    ul>li:first-child{
+        /* border: 1px solid red; */
+        margin-left: 10px;
+    }
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+        color: grey;
+    } 
+
+    header{
+        background-color: grey;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href ="https://decagonhq.com">
+                    <img src="https://decagonhq.com/wp-content/uploads/2021/12/logo-white.svg" alt="Decagon HQ"/>
+                </a></li>
+                <li><a href="https://decagonhq.com/fellowship" target="_blank">Build Your Dev Team</a></li>
+                <i class="fa-solid fa-bars"></i>
+            </ul>
+        </nav>
+        <article class="overlay"></article>
+        <h1>Build faster with <span style="color: #b4d245;">vetted</span> remote software engineering talent.</h1>
+    </header>
+    
+</body>
+</html>
